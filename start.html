@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pokémon Portal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Verdana', sans-serif;
+      background: url('img/612ce45c1b9679000402af1b.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: white;
+      font-size: 48px;
+      text-shadow: 2px 2px 6px black;
+      margin-bottom: 40px;
+    }
+.info {
+      padding: 20px 60px;
+      font-size: 24px;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      color: white;
+      background-image: linear-gradient(to right, #415eff, #0e00cf);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+      transition: transform 0.2s ease;
+}
+    
+.spiel {
+      padding: 20px 60px;
+      font-size: 24px;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      color: white;
+      background-image: linear-gradient(to right, #ff416c, #ff4b2b);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+      transition: transform 0.2s ease;
+    }
+
+    -btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Los geht’s</button>
+  <button class="info btn" onclick="window.location.href='info.html'">Info</button>
+  <button class="spiel btn" onclick="window.location.href='spiele.html'">Spiele</button>
+</body>
+</html>

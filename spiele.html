@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pokémon Auswahl</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Verdana', sans-serif;
+      background: url('img/612ce45c1b9679000402af1b.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      margin-top: 40px;
+      font-size: 40px;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(2, 360px);
+      gap: 30px;
+      justify-content: center;
+      margin: 60px auto;
+      max-width: 900px;
+    }
+
+    .poke-btn {
+      height: 120px;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 18px;
+      cursor: pointer;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s ease;
+      background-image: linear-gradient(to right, var(--start), var(--end));
+    }
+
+    .poke-btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Farbverläufe */
+     .ex       { --start: #630000; --end: #000000; }
+    .rot        { --start: #e74c3c; --end: #f39c12; }
+    .gelb       { --start: #f9d423; --end: #f1c40f; }
+    .gold       { --start: #f1c40f; --end: #a8e063; color: black; }
+    .kristall   { --start: #00cfff; --end: #3498db; }
+    .rubin      { --start: #c0392b; --end: #e67e22; }
+    .smaragd    { --start: #2ecc71; --end: #1abc9c; }
+    .feuerrot   { --start: #ff3c3c; --end: #b20000; }
+    .diamant    { --start: #b9f2ff; --end: #5c8ca7; color: black; }
+    .platin     { --start: #d3d3d3; --end: #4a4a4a; }
+    .heartgold  { --start: #f5c842; --end: #a0830a; color: black; }
+    .perl       { --start: #c87eff; --end: #7945a6; }
+    .mystery    { --start: #ff6f61; --end: #c0392b; }
+
+    @media (max-width: 768px) {
+      .button-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Wähle deine Pokémon-Edition</h1>
+
+  <div class="button-container">
+    <button class="poke-btn rot"        onclick="window.open('https://www.emulatorgames.net/roms/gameboy/pokemon-red/')">Rote Edition</button>
+    <button class="poke-btn gelb"       onclick="window.open('https://www.emulatorgames.net/roms/gameboy-color/pokemon-yellow-version/')">Gelbe Edition</button>
+    <button class="poke-btn gold"       onclick="window.open('https://www.emulatorgames.net/roms/gameboy-color/pokemon-gold-version/')">Goldene Edition</button>
+    <button class="poke-btn kristall"   onclick="window.open('https://www.emulatorgames.net/roms/gameboy-color/pokemon-crystal-version-v11/')">Kristall-Edition</button>
+    <button class="poke-btn rubin"      onclick="window.open('https://www.emulatorgames.net/roms/gameboy-advance/pokemon-ruby/')">Rubin</button>
+    <button class="poke-btn smaragd"    onclick="window.open('https://www.emulatorgames.net/roms/gameboy-advance/pokemon-emerald/')">Smaragd</button>
+    <button class="poke-btn feuerrot"   onclick="window.open('https://www.emulatorgames.net/roms/gameboy-advance/pokemon-fire-red/')">Feuerrote Edition</button>
+    <button class="poke-btn diamant"    onclick="window.open('https://www.emulatorgames.net/roms/nintendo-ds/pokemon-diamond/')">Diamant</button>
+    <button class="poke-btn platin"     onclick="window.open('https://www.emulatorgames.net/roms/nintendo-ds/pokemon-platinum/')">Platin</button>
+    <button class="poke-btn heartgold"  onclick="window.open('https://www.emulatorgames.net/roms/nintendo-ds/pokemon-goldene-edition-heartgold/')">HeartGold</button>
+    <button class="poke-btn perl"       onclick="window.open('https://www.emulatorgames.net/roms/nintendo-ds/pokemon-pearl-version-v113/')">Perl</button>
+    <button class="poke-btn mystery"    onclick="window.open('https://www.emulatorgames.net/roms/nintendo-ds/pokemon-mystery-dungeon-blue-rescue-team/')">Mystery Dungeon</button>
+    <button class="poke-btn ex" onclick="window.location.href='start.html'">Exit</button>
+  </div>
+
+
+</body>
+</html>
